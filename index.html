@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>কেশবতী ন্যাচুরা গ্লো | ১০০% খাঁটি ভেষজ হেয়ার ও স্কিনকেয়ার</title>
+<meta name="description" content="কেশবতী ন্যাচুরা গ্লো — কেমিক্যালমুক্ত ১০০% খাঁটি ভেষজ হেয়ার অয়েল, উবটান ফেসপ্যাক ও হারবাল সাবান। সারা দেশে ক্যাশ অন ডেলিভারি।">
+<meta name="theme-color" content="#14532D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+document.documentElement.classList.add('js');
+tailwind.config = {
+  theme: { extend: {
+    /* 'gold' = main CTA accent (now a fresh green); 'forest' = deep green text/backgrounds */
+    colors: { forest:'#14532D', 'forest-dark':'#0B3A1F', sage:'#2F9E5B', cream:'#F5FBF2', gold:'#15803D', 'gold-dark':'#166534', mint:'#DDF3E1', sand:'#E8F5E1' },
+    fontFamily: { bn:['"Hind Siliguri"','"Noto Sans Bengali"','system-ui','sans-serif'], en:['"Cormorant Garamond"','Georgia','serif'] },
+    boxShadow: { card:'0 2px 4px rgba(20,83,45,.05), 0 10px 28px -8px rgba(20,83,45,.16)', lift:'0 18px 40px -12px rgba(20,83,45,.28)' }
+  } }
+};
+</script>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:'Hind Siliguri','Noto Sans Bengali',system-ui,sans-serif;background:#F5FBF2;color:#1F2F25;line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{line-height:1.3}
+:focus-visible{outline:3px solid #15803D;outline-offset:2px;border-radius:6px}
+/* blank image slots: stay invisible until you add a src */
+img:not([src]),img[src=""]{visibility:hidden}
+.logo-img{min-width:40px;min-height:40px;object-fit:contain}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;font-weight:600;border-radius:.65rem;transition:transform .2s,background-color .2s,box-shadow .2s,color .2s,border-color .2s;cursor:pointer;white-space:nowrap}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:#15803D;color:#fff}.btn-gold:hover{background:#166534;box-shadow:0 10px 22px -8px rgba(22,101,52,.7)}
+.btn-line{border:1.5px solid rgba(20,83,45,.3);color:#14532D;background:rgba(255,255,255,.7)}.btn-line:hover{border-color:#14532D;background:#fff}
+.btn-forest{background:#14532D;color:#fff}.btn-forest:hover{background:#0B3A1F;box-shadow:0 10px 22px -8px rgba(20,83,45,.7)}
+.ic{display:inline-block;flex:none}
+/* hero */
+.slide{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .9s ease,visibility .9s}
+.slide.active{opacity:1;visibility:visible;z-index:2}
+.slide .txt>*{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.slide.active .txt>*{opacity:1;transform:none}
+.slide.active .txt>*:nth-child(1){transition-delay:.15s}.slide.active .txt>*:nth-child(2){transition-delay:.28s}.slide.active .txt>*:nth-child(3){transition-delay:.4s}.slide.active .txt>*:nth-child(4){transition-delay:.52s}
+/* zoom effect minimised (was 1.05 + cover crop) */
+.slide .himg{transform:scale(1.015);transition:transform 6s ease-out}
+.slide.active .himg{transform:scale(1)}
+.himg-wrap{-webkit-mask-image:radial-gradient(closest-side,#000 82%,transparent 100%);mask-image:radial-gradient(closest-side,#000 82%,transparent 100%)}
+@media(min-width:768px){.himg-wrap{-webkit-mask-image:linear-gradient(to right,transparent 0,#000 10%);mask-image:linear-gradient(to right,transparent 0,#000 10%)}}
+.dot{height:8px;width:8px;border-radius:99px;background:rgba(20,83,45,.25);transition:all .3s}
+.dot.on{width:26px;background:#15803D}
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal,.slide .txt>*{opacity:1;transform:none;transition:none}.slide,.slide .himg{transition:none}}
+/* product card */
+.pcard img{transition:transform .6s ease}.pcard:hover img{transform:scale(1.05)}
+/* product slider */
+.no-scrollbar{scrollbar-width:none}
+.no-scrollbar::-webkit-scrollbar{display:none}
+/* benefits: icon + text center */
+#benefits .reveal{text-align:center}
+#benefits .reveal>span{margin-left:auto;margin-right:auto}
+/* faq */
+.faq-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.faq-body>div{overflow:hidden}
+.faq-item.open .faq-body{grid-template-rows:1fr}
+.faq-item.open .faq-chev{transform:rotate(180deg)}
+.faq-chev{transition:transform .3s}
+/* panels */
+.panel{transition:transform .35s cubic-bezier(.4,0,.2,1)}
+#overlay{transition:opacity .3s}
+.field{width:100%;border:1.5px solid #CFE3D3;background:#fff;border-radius:.7rem;padding:.7rem .95rem;font-size:1rem;transition:border-color .2s,box-shadow .2s}
+.field:focus{outline:none;border-color:#2F9E5B;box-shadow:0 0 0 4px rgba(47,158,91,.18)}
+.field.err{border-color:#C0392B;box-shadow:0 0 0 4px rgba(192,57,43,.08)}
+.err-msg{color:#B03226;font-size:.85rem;margin-top:.25rem;display:none}
+.err-msg.show{display:block}
+.leafbg{background-image:radial-gradient(circle at 12% 18%,rgba(47,158,91,.13),transparent 38%),radial-gradient(circle at 90% 85%,rgba(132,204,22,.12),transparent 40%)}
+.toast{transition:opacity .3s,transform .3s}
+@keyframes pop{0%{transform:scale(1)}50%{transform:scale(1.35)}100%{transform:scale(1)}}
+.pop{animation:pop .4s ease}
+@keyframes flash{0%,100%{box-shadow:0 0 0 0 rgba(21,128,61,0)}30%{box-shadow:0 0 0 6px rgba(21,128,61,.35)}}
+.flash{animation:flash 1.2s ease 1}
+</style>
+</head>
+<body class="pb-[74px] lg:pb-0">
+<a href="#order-form" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-white focus:px-4 focus:py-2 focus:rounded">মূল কনটেন্টে যান</a>
+
+<!-- ============ HEADER ============ -->
+<header class="sticky top-0 z-40 bg-cream/95 backdrop-blur border-b border-forest/10">
+  <div class="max-w-7xl mx-auto h-[68px] px-4 lg:px-8 flex items-center justify-between gap-3">
+    <a href="#home" class="flex items-center gap-2.5 shrink-0" aria-label="কেশবতী ন্যাচুরা গ্লো হোম">
+      <!-- LOGO: add your logo, e.g. src="images/logo.png" -->
+      <img src="./images/logo-bg.png" alt="Keshoboti Natura Glow লোগো" class="logo-img h-20 w-auto" width="100" height="100">
+      <span class="leading-none">
+        <!-- <span class="block font-en text-[23px] font-semibold text-forest tracking-wide">KESHOBOTI</span>
+        <span class="block text-[13px] text-gold-dark font-medium tracking-wide">Natura Glow</span> -->
+      </span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-4 xl:gap-7 text-[14.5px] font-medium text-forest" aria-label="প্রধান মেনু">
+      <a data-nav="home" href="#home" class="py-1 border-b-2 border-transparent hover:text-gold-dark transition">হোম</a>
+      <a data-nav="products" href="#products" class="py-1 border-b-2 border-transparent hover:text-gold-dark transition">আমাদের পণ্য</a>
+      <a data-nav="benefits" href="#benefits" class="py-1 border-b-2 border-transparent hover:text-gold-dark transition">উপকারিতা</a>
+      <a data-nav="purity" href="#purity" class="py-1 border-b-2 border-transparent hover:text-gold-dark transition">খাঁটিত্বের নিশ্চয়তা</a>
+      <a data-nav="reviews" href="#reviews" class="py-1 border-b-2 border-transparent hover:text-gold-dark transition">রিভিউ</a>
+      <a data-nav="faq" href="#faq" class="py-1 border-b-2 border-transparent hover:text-gold-dark transition">FAQ</a>
+      <a data-nav="contact" href="#contact" class="py-1 border-b-2 border-transparent hover:text-gold-dark transition">যোগাযোগ</a>
+    </nav>
+    <div class="flex items-center gap-2 sm:gap-3">
+      <button type="button" data-open="cart" class="relative p-2.5 rounded-full text-forest hover:bg-forest/5 transition" aria-label="কার্ট দেখুন">
+        <i data-i="cart" class="ic w-6 h-6"></i>
+        <span class="cart-count absolute -top-0.5 -right-0.5 min-w-[20px] h-5 px-1 rounded-full bg-gold text-white text-[11px] font-semibold grid place-items-center">০</span>
+      </button>
+      <a href="#order-form" class="btn btn-gold hidden sm:inline-flex px-5 py-2.5 text-[15px]">অর্ডার করুন</a>
+      <button type="button" data-open="menu" class="lg:hidden p-2.5 rounded-full text-forest hover:bg-forest/5" aria-label="মেনু খুলুন"><i data-i="menu" class="ic w-6 h-6"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile menu drawer -->
+<aside id="menuPanel" class="panel fixed top-0 left-0 z-[60] h-full w-[82%] max-w-sm bg-cream shadow-2xl -translate-x-full flex flex-col" aria-label="মোবাইল মেনু" aria-hidden="true">
+  <div class="flex items-center justify-between px-5 h-[68px] border-b border-forest/10">
+    <span class="flex items-center gap-2"><img alt="" class="logo-img h-9 w-auto"><span class="font-en text-xl font-semibold text-forest">KESHOBOTI</span></span>
+    <button type="button" data-close class="p-2 rounded-full hover:bg-forest/5" aria-label="মেনু বন্ধ করুন"><i data-i="x" class="ic w-6 h-6"></i></button>
+  </div>
+  <nav class="flex-1 overflow-y-auto p-4 text-lg font-medium text-forest">
+    <a data-close href="#home" class="block px-4 py-3 rounded-xl hover:bg-forest/5">হোম</a>
+    <a data-close href="#products" class="block px-4 py-3 rounded-xl hover:bg-forest/5">আমাদের পণ্য</a>
+    <a data-close href="#benefits" class="block px-4 py-3 rounded-xl hover:bg-forest/5">উপকারিতা</a>
+    <a data-close href="#purity" class="block px-4 py-3 rounded-xl hover:bg-forest/5">খাঁটিত্বের নিশ্চয়তা</a>
+    <a data-close href="#reviews" class="block px-4 py-3 rounded-xl hover:bg-forest/5">রিভিউ</a>
+    <a data-close href="#faq" class="block px-4 py-3 rounded-xl hover:bg-forest/5">FAQ</a>
+    <a data-close href="#contact" class="block px-4 py-3 rounded-xl hover:bg-forest/5">যোগাযোগ</a>
+  </nav>
+  <div class="p-4 border-t border-forest/10 space-y-2">
+    <a data-close href="#order-form" class="btn btn-gold w-full py-3 text-base">এখনই অর্ডার করুন</a>
+    <a data-wa target="_blank" rel="noopener" class="btn btn-line w-full py-3 text-base"><i data-i="wa" class="ic w-5 h-5"></i>WhatsApp-এ কথা বলুন</a>
+  </div>
+</aside>
+
+<!-- Cart drawer -->
+<aside id="cartPanel" class="panel fixed top-0 right-0 z-[60] h-full w-full max-w-md bg-cream shadow-2xl translate-x-full flex flex-col" aria-label="শপিং কার্ট" aria-hidden="true">
+  <div class="flex items-center justify-between px-5 h-[68px] border-b border-forest/10">
+    <h2 class="text-xl font-semibold text-forest flex items-center gap-2"><i data-i="cart" class="ic w-5 h-5"></i>আপনার কার্ট (<span class="cart-count-text">০</span>)</h2>
+    <button type="button" data-close class="p-2 rounded-full hover:bg-forest/5" aria-label="কার্ট বন্ধ করুন"><i data-i="x" class="ic w-6 h-6"></i></button>
+  </div>
+  <div id="cartItems" class="flex-1 overflow-y-auto p-4 space-y-3"></div>
+  <div class="p-4 border-t border-forest/10 bg-white space-y-3">
+    <div class="flex items-center justify-between text-lg"><span class="text-forest/80">সাবটোটাল</span><strong id="cartSubtotal" class="text-forest">৳০</strong></div>
+    <p class="text-sm text-forest/60">ডেলিভারি চার্জ অর্ডার ফর্মে এলাকা অনুযায়ী যোগ হবে।</p>
+    <button type="button" id="cartCheckout" class="btn btn-gold w-full py-3.5 text-lg">অর্ডার করুন</button>
+  </div>
+</aside>
+<div id="overlay" class="fixed inset-0 z-[55] bg-forest-dark/55 opacity-0 pointer-events-none" data-close></div>
+
+<main>
+<!-- ============ HERO SLIDER ============ -->
+<section id="home" class="relative bg-gradient-to-br from-[#F3FBEF] via-cream to-[#D9F0DD] overflow-hidden" aria-roledescription="carousel" aria-label="প্রচারণা ব্যানার">
+  <!-- height reduced: mobile 580 / sm 540 / md 440 / lg 480 -->
+  <div id="slider" class="relative h-[580px] sm:h-[540px] md:h-[440px] lg:h-[480px]">
+
+    <article class="slide active" role="group" aria-roledescription="slide" aria-label="১ / ৩">
+      <div class="max-w-7xl mx-auto h-full px-5 sm:px-10 lg:px-16 grid grid-rows-[210px_1fr] md:grid-rows-1 md:grid-cols-2 items-center md:gap-4">
+        <div class="himg-wrap relative h-full order-1 md:order-2">
+          <!-- SLIDE 1 IMAGE: add src="images/hero-1.jpg" -->
+          <img src="./images/banner1.jpg" alt="জবা ফুল ও হার্বাল উপকরণে সাজানো কেশবতী হারবাল হেয়ার অয়েল" class="himg absolute inset-0 w-full h-full object-contain object-center">
+        </div>
+        <div class="txt order-2 md:order-1 pb-12 md:pb-0 md:pr-6">
+          <p class="inline-flex items-center gap-2 text-sm font-semibold text-sage bg-mint rounded-full px-3 py-1 mb-2"><i data-i="leaf" class="ic w-4 h-4"></i>১০০% ভেষজ</p>
+          <h1 class="font-en font-semibold text-forest text-[38px] sm:text-5xl lg:text-[60px] leading-[1.02]">KESHOBOTI<br>Natura Glow</h1>
+          <p class="mt-2 text-lg sm:text-xl lg:text-[24px] font-semibold text-forest">কেমিক্যালমুক্ত ১০০% খাঁটি ভেষজ যত্ন</p>
+          <p class="mt-1.5 text-[15px] sm:text-base text-forest/80 max-w-md">চুল পড়া রোধ এবং ত্বকের প্রাকৃতিক উজ্জ্বলতায় যুগান্তকারী সমাধান</p>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <a href="#order-form" class="btn btn-gold px-6 py-2.5 text-base shadow-lg shadow-gold/25">এখনই অর্ডার করুন</a>
+            <a href="#benefits" class="btn btn-line px-6 py-2.5 text-base">বিস্তারিত দেখুন</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide" role="group" aria-roledescription="slide" aria-label="২ / ৩">
+      <div class="max-w-7xl mx-auto h-full px-5 sm:px-10 lg:px-16 grid grid-rows-[210px_1fr] md:grid-rows-1 md:grid-cols-2 items-center md:gap-4">
+        <div class="himg-wrap relative h-full order-1 md:order-2">
+          <!-- SLIDE 2 IMAGE: add src="images/hero-2.jpg" -->
+          <img src="./images/banner2.jpg" alt="অ্যালোভেরা, চন্দন ও গোলাপের পাপড়ি সহ অর্গানিক ফেসপ্যাক" class="himg absolute inset-0 w-full h-full object-contain object-center" loading="lazy">
+        </div>
+        <div class="txt order-2 md:order-1 pb-12 md:pb-0 md:pr-6">
+          <p class="inline-flex items-center gap-2 text-sm font-semibold text-sage bg-mint rounded-full px-3 py-1 mb-2"><i data-i="sparkle" class="ic w-4 h-4"></i>স্কিনকেয়ার</p>
+          <h2 class="font-bold text-forest text-3xl sm:text-4xl lg:text-[48px] leading-[1.25]">প্রাকৃতিক উজ্জ্বলতা</h2>
+          <p class="mt-2 text-lg sm:text-xl lg:text-[24px] font-semibold text-sage">অর্গানিক ফেসপ্যাক ও স্কিনকেয়ার</p>
+          <p class="mt-1.5 text-[15px] sm:text-base text-forest/80 max-w-md">নিখুঁত ও স্বাস্থ্যোজ্জ্বল ত্বকের জন্য প্রাকৃতিক উবটান ও উপাদানের ছোঁয়া</p>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <a href="#products" class="btn btn-forest px-6 py-2.5 text-base">প্যাকেজ দেখুন</a>
+            <button type="button" data-order="pack" class="btn btn-gold px-6 py-2.5 text-base shadow-lg shadow-gold/25">অর্ডার করুন</button>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="slide" role="group" aria-roledescription="slide" aria-label="৩ / ৩">
+      <div class="max-w-7xl mx-auto h-full px-5 sm:px-10 lg:px-16 grid grid-rows-[210px_1fr] md:grid-rows-1 md:grid-cols-2 items-center md:gap-4">
+        <div class="himg-wrap relative h-full order-1 md:order-2">
+          <!-- SLIDE 3 IMAGE: add src="images/hero-3.jpg" -->
+          <img src="./images/banner3.png" alt="হারবাল হেয়ার অয়েল ও ফেসপ্যাকের গিফট কম্বো বক্স" class="himg absolute inset-0 w-full h-full object-contain object-center" loading="lazy">
+        </div>
+        <div class="txt order-2 md:order-1 pb-12 md:pb-0 md:pr-6">
+          <p class="inline-flex items-center gap-2 text-sm font-semibold text-gold-dark bg-gold/10 rounded-full px-3 py-1 mb-2"><i data-i="gift" class="ic w-4 h-4"></i>বিশেষ অফার</p>
+          <h2 class="font-bold text-forest text-3xl sm:text-4xl lg:text-[48px] leading-[1.25]">কমপ্লিট কেয়ার কম্বো</h2>
+          <p class="mt-2 text-lg sm:text-xl lg:text-[24px] font-semibold text-sage">চুল ও ত্বকের অল-ইন-ওয়ান প্যাকেজ</p>
+          <p class="mt-1.5 text-[15px] sm:text-base text-forest/80 max-w-md">সবচেয়ে জনপ্রিয় হারবাল তেল ও ফেসপ্যাক কম্বো বিশেষ ছাড়ে</p>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <button type="button" data-order="combo" class="btn btn-gold px-6 py-2.5 text-base shadow-lg shadow-gold/25">অফারটি নিন</button>
+            <a href="#order-form" class="btn btn-line px-6 py-2.5 text-base">অর্ডার করুন</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <button type="button" id="prevSlide" class="absolute z-10 left-2 sm:left-4 top-[105px] md:top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/95 shadow-card text-forest grid place-items-center hover:bg-white hover:scale-105 transition" aria-label="আগের স্লাইড"><i data-i="left" class="ic w-5 h-5"></i></button>
+    <button type="button" id="nextSlide" class="absolute z-10 right-2 sm:right-4 top-[105px] md:top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/95 shadow-card text-forest grid place-items-center hover:bg-white hover:scale-105 transition" aria-label="পরের স্লাইড"><i data-i="right" class="ic w-5 h-5"></i></button>
+    <div class="absolute z-10 bottom-3 left-0 right-0 flex justify-center gap-2" id="dots" role="tablist" aria-label="স্লাইড নির্বাচন"></div>
+  </div>
+</section>
+
+<!-- Trust strip -->
+<section class="bg-white border-y border-forest/10" aria-label="আমাদের প্রতিশ্রুতি">
+  <div class="max-w-7xl mx-auto px-4 lg:px-8 py-4 grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-3 text-forest text-[15px] font-medium">
+    <div class="flex items-center gap-3 justify-center lg:justify-start"><span class="w-10 h-10 rounded-full bg-mint grid place-items-center text-sage shrink-0"><i data-i="leaf" class="ic w-5 h-5"></i></span>১০০% প্রাকৃতিক ও অর্গানিক</div>
+    <div class="flex items-center gap-3 justify-center lg:justify-start"><span class="w-10 h-10 rounded-full bg-mint grid place-items-center text-sage shrink-0"><i data-i="truck" class="ic w-5 h-5"></i></span>সারা দেশে ক্যাশ অন ডেলিভারি</div>
+    <div class="flex items-center gap-3 justify-center lg:justify-start"><span class="w-10 h-10 rounded-full bg-mint grid place-items-center text-sage shrink-0"><i data-i="shield" class="ic w-5 h-5"></i></span>কোনো ক্ষতিকর কেমিক্যাল নেই</div>
+    <div class="flex items-center gap-3 justify-center lg:justify-start"><span class="w-10 h-10 rounded-full bg-mint grid place-items-center text-sage shrink-0"><i data-i="undo" class="ic w-5 h-5"></i></span>৭ দিনের সহজ রিটার্ন</div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section id="products" class="py-10 lg:py-14 leafbg">
+  <div class="max-w-7xl mx-auto px-4 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <p class="text-gold-dark font-semibold tracking-wide">আমাদের কালেকশন</p>
+      <h2 class="mt-0.5 text-3xl sm:text-4xl font-bold text-forest">আমাদের সিগনেচার প্রোডাক্টস</h2>
+      <div class="mx-auto mt-3 h-1 w-16 rounded bg-gold"></div>
+      <p class="mt-3 text-forest/75">প্রকৃতির খাঁটি উপাদানে তৈরি — চুল ও ত্বকের প্রতিদিনের যত্নে।</p>
+    </div>
+    <div class="relative mt-6">
+      <button type="button" id="prodPrev" class="absolute z-10 top-[28%] -translate-y-1/2 left-1 sm:-left-3 lg:-left-5 w-11 h-11 rounded-full bg-white shadow-card text-forest grid place-items-center hover:scale-105 transition disabled:opacity-40 disabled:cursor-not-allowed" aria-label="আগের পণ্য"><i data-i="left" class="ic w-5 h-5"></i></button>
+      <div id="productGrid" class="flex gap-3 sm:gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar pt-1 pb-3 px-0.5"></div>
+      <button type="button" id="prodNext" class="absolute z-10 top-[28%] -translate-y-1/2 right-1 sm:-right-3 lg:-right-5 w-11 h-11 rounded-full bg-white shadow-card text-forest grid place-items-center hover:scale-105 transition disabled:opacity-40 disabled:cursor-not-allowed" aria-label="পরের পণ্য"><i data-i="right" class="ic w-5 h-5"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BENEFITS ============ -->
+<section id="benefits" class="py-16 lg:py-24 bg-forest text-white relative overflow-hidden">
+  <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-sage/25 blur-3xl"></div>
+  <div class="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-lime-400/10 blur-3xl"></div>
+  <div class="relative max-w-7xl mx-auto px-4 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <p class="text-[#BBF7D0] font-semibold">কেন কেশবতী?</p>
+      <h2 class="mt-1 text-3xl sm:text-4xl font-bold">প্রকৃতির শক্তিতে চুল ও ত্বকের পূর্ণ যত্ন</h2>
+      <p class="mt-4 text-white/75">নিয়মিত ব্যবহারে যে উপকারগুলো পাবেন (ফলাফল ব্যক্তিভেদে ভিন্ন হতে পারে)</p>
+    </div>
+    <div class="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      <div class="reveal rounded-2xl bg-white/[.07] border border-white/15 p-5 sm:p-7 hover:bg-white/[.12] transition">
+        <span class="w-14 h-14 rounded-2xl bg-sage grid place-items-center"><i data-i="shield" class="ic w-7 h-7"></i></span>
+        <h3 class="mt-5 text-xl font-semibold">চুল পড়া রোধ</h3>
+        <p class="mt-2 text-white/75 text-[15px]">জবা, আমলকী ও ভেষজ উপাদান চুলের গোড়া মজবুত করতে সাহায্য করে।</p>
+      </div>
+      <div class="reveal rounded-2xl bg-white/[.07] border border-white/15 p-5 sm:p-7 hover:bg-white/[.12] transition" style="transition-delay:.08s">
+        <span class="w-14 h-14 rounded-2xl bg-sage grid place-items-center"><i data-i="sprout" class="ic w-7 h-7"></i></span>
+        <h3 class="mt-5 text-xl font-semibold">নতুন চুল গজানো</h3>
+        <p class="mt-2 text-white/75 text-[15px]">মাথার ত্বকে পুষ্টি জুগিয়ে নতুন চুলের স্বাভাবিক বৃদ্ধিতে সহায়তা করে।</p>
+      </div>
+      <div class="reveal rounded-2xl bg-white/[.07] border border-white/15 p-5 sm:p-7 hover:bg-white/[.12] transition" style="transition-delay:.16s">
+        <span class="w-14 h-14 rounded-2xl bg-sage grid place-items-center"><i data-i="wind" class="ic w-7 h-7"></i></span>
+        <h3 class="mt-5 text-xl font-semibold">খুশকি দূর করা</h3>
+        <p class="mt-2 text-white/75 text-[15px]">নিম ও তুলসীর প্রাকৃতিক গুণে স্ক্যাল্প থাকে পরিষ্কার ও আরামদায়ক।</p>
+      </div>
+      <div class="reveal rounded-2xl bg-white/[.07] border border-white/15 p-5 sm:p-7 hover:bg-white/[.12] transition" style="transition-delay:.24s">
+        <span class="w-14 h-14 rounded-2xl bg-sage grid place-items-center"><i data-i="sparkle" class="ic w-7 h-7"></i></span>
+        <h3 class="mt-5 text-xl font-semibold">ত্বকের উজ্জ্বলতা বৃদ্ধি</h3>
+        <p class="mt-2 text-white/75 text-[15px]">উবটান, চন্দন ও অ্যালোভেরা ত্বককে করে কোমল, সতেজ ও উজ্জ্বল।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PURITY ============ -->
+<section id="purity" class="py-16 lg:py-24 bg-sand/60">
+  <div class="max-w-7xl mx-auto px-4 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <p class="text-gold-dark font-semibold">খাঁটিত্বের নিশ্চয়তা</p>
+      <h2 class="mt-1 text-3xl sm:text-4xl font-bold text-forest">Keshoboti Natura Glow বনাম বাজারের কেমিক্যাল পণ্য</h2>
+      <div class="mx-auto mt-4 h-1 w-16 rounded bg-gold"></div>
+    </div>
+
+    <div class="mt-10 reveal bg-white rounded-3xl shadow-card overflow-hidden border border-forest/10">
+      <div class="overflow-x-auto">
+        <table class="w-full min-w-[560px] text-left">
+          <caption class="sr-only">কেশবতী ন্যাচুরা গ্লো ও বাজারের কেমিক্যাল পণ্যের তুলনা</caption>
+          <thead>
+            <tr>
+              <th scope="col" class="p-4 sm:p-5 bg-sand text-forest/70 font-semibold w-[34%]">বিষয়</th>
+              <th scope="col" class="p-4 sm:p-5 bg-forest text-white font-semibold text-center"><span class="font-en text-xl tracking-wide">Keshoboti</span> <span class="text-[#BBF7D0] text-sm">Natura Glow</span></th>
+              <th scope="col" class="p-4 sm:p-5 bg-sand text-forest/70 font-semibold text-center">বাজারের কেমিক্যাল পণ্য</th>
+            </tr>
+          </thead>
+          <tbody id="compareBody" class="text-[15px] sm:text-base"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="mt-16 text-center max-w-2xl mx-auto reveal">
+      <h3 class="text-2xl sm:text-3xl font-bold text-forest">প্রকৃতির সেরা উপাদানগুলো</h3>
+      <p class="mt-2 text-forest/75">প্রতিটি পণ্যে ব্যবহার হয় বাছাই করা খাঁটি ভেষজ উপাদান</p>
+    </div>
+    <div id="ingredients" class="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-5"></div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section id="reviews" class="py-16 lg:py-24">
+  <div class="max-w-7xl mx-auto px-4 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <p class="text-gold-dark font-semibold">গ্রাহকদের কথা</p>
+      <h2 class="mt-1 text-3xl sm:text-4xl font-bold text-forest">যারা ব্যবহার করেছেন, তারা কী বলছেন</h2>
+      <div class="mx-auto mt-4 h-1 w-16 rounded bg-gold"></div>
+    </div>
+    <div id="reviewGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6"></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="py-16 lg:py-24 bg-mint/60">
+  <div class="max-w-3xl mx-auto px-4 lg:px-8">
+    <div class="text-center reveal">
+      <p class="text-gold-dark font-semibold">সাধারণ জিজ্ঞাসা</p>
+      <h2 class="mt-1 text-3xl sm:text-4xl font-bold text-forest">প্রায়ই জানতে চাওয়া প্রশ্ন</h2>
+      <div class="mx-auto mt-4 h-1 w-16 rounded bg-gold"></div>
+    </div>
+    <div id="faqList" class="mt-10 space-y-3"></div>
+  </div>
+</section>
+
+<!-- ============ ORDER FORM ============ -->
+<section id="order-form" class="py-16 lg:py-24 leafbg">
+  <div class="max-w-6xl mx-auto px-4 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <p class="text-gold-dark font-semibold">ক্যাশ অন ডেলিভারি</p>
+      <h2 class="mt-1 text-3xl sm:text-4xl font-bold text-forest">এখনই অর্ডার করুন</h2>
+      <div class="mx-auto mt-4 h-1 w-16 rounded bg-gold"></div>
+      <p class="mt-4 text-forest/75">পণ্য বেছে নিন, তথ্য দিন — পণ্য হাতে পেয়ে টাকা পরিশোধ করুন।</p>
+    </div>
+
+    <form id="orderForm" novalidate class="mt-10 grid lg:grid-cols-[1.25fr_1fr] gap-6 items-start">
+      <div class="bg-white rounded-3xl shadow-card border border-forest/10 p-5 sm:p-8 space-y-7">
+        <div>
+          <h3 class="text-xl font-semibold text-forest flex items-center gap-2"><span class="w-7 h-7 rounded-full bg-forest text-white text-sm grid place-items-center">১</span>পণ্য নির্বাচন করুন</h3>
+          <div id="picker" class="mt-4 space-y-3"></div>
+          <p id="err-products" class="err-msg">অনুগ্রহ করে অন্তত একটি পণ্য বেছে নিন।</p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-forest flex items-center gap-2"><span class="w-7 h-7 rounded-full bg-forest text-white text-sm grid place-items-center">২</span>আপনার তথ্য</h3>
+          <div class="mt-4 grid gap-4">
+            <div>
+              <label for="fName" class="block mb-1.5 font-medium text-forest">আপনার নাম <span class="text-red-600">*</span></label>
+              <input id="fName" name="name" class="field" type="text" autocomplete="name" placeholder="যেমন: তানজিলা আক্তার">
+              <p id="err-name" class="err-msg">অনুগ্রহ করে আপনার পূর্ণ নাম লিখুন।</p>
+            </div>
+            <div>
+              <label for="fPhone" class="block mb-1.5 font-medium text-forest">মোবাইল নম্বর <span class="text-red-600">*</span></label>
+              <input id="fPhone" name="phone" class="field" type="tel" inputmode="numeric" autocomplete="tel" maxlength="14" placeholder="01XXXXXXXXX (১১ ডিজিট)">
+              <p id="err-phone" class="err-msg">সঠিক ১১ ডিজিটের মোবাইল নম্বর দিন (যেমন: 017XXXXXXXX)।</p>
+            </div>
+            <div>
+              <label for="fAddress" class="block mb-1.5 font-medium text-forest">সম্পূর্ণ ঠিকানা <span class="text-red-600">*</span></label>
+              <textarea id="fAddress" name="address" rows="3" class="field resize-none" autocomplete="street-address" placeholder="বাড়ি/ফ্ল্যাট নম্বর, রাস্তা, এলাকা, থানা ও জেলা"></textarea>
+              <p id="err-address" class="err-msg">অনুগ্রহ করে সম্পূর্ণ ঠিকানা লিখুন (কমপক্ষে ১০ অক্ষর)।</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-forest flex items-center gap-2"><span class="w-7 h-7 rounded-full bg-forest text-white text-sm grid place-items-center">৩</span>ডেলিভারি এলাকা</h3>
+          <div class="mt-4 grid sm:grid-cols-2 gap-3">
+            <label class="zone cursor-pointer">
+              <input type="radio" name="zone" value="60" class="peer sr-only" checked>
+              <span class="flex items-center justify-between gap-3 rounded-xl border-[1.5px] border-[#CFE3D3] px-4 py-3.5 transition peer-checked:border-sage peer-checked:bg-mint peer-focus-visible:ring-4 peer-focus-visible:ring-sage/25">
+                <span class="font-medium text-forest">ঢাকার ভেতরে</span><strong class="text-gold-dark">৳৬০</strong>
+              </span>
+            </label>
+            <label class="zone cursor-pointer">
+              <input type="radio" name="zone" value="120" class="peer sr-only">
+              <span class="flex items-center justify-between gap-3 rounded-xl border-[1.5px] border-[#CFE3D3] px-4 py-3.5 transition peer-checked:border-sage peer-checked:bg-mint peer-focus-visible:ring-4 peer-focus-visible:ring-sage/25">
+                <span class="font-medium text-forest">ঢাকার বাইরে</span><strong class="text-gold-dark">৳১২০</strong>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <aside class="bg-white rounded-3xl shadow-card border border-forest/10 p-5 sm:p-8 lg:sticky lg:top-24" aria-live="polite">
+        <h3 class="text-xl font-semibold text-forest">অর্ডার সামারি</h3>
+        <div id="summaryLines" class="mt-4 divide-y divide-forest/10 text-[15px]"></div>
+        <dl class="mt-4 space-y-2 border-t border-dashed border-forest/20 pt-4">
+          <div class="flex justify-between"><dt class="text-forest/75">সাবটোটাল</dt><dd id="sumSub" class="font-semibold text-forest">৳০</dd></div>
+          <div class="flex justify-between"><dt class="text-forest/75">ডেলিভারি চার্জ</dt><dd id="sumDel" class="font-semibold text-forest">৳৬০</dd></div>
+          <p id="freeNote" class="hidden text-sm text-sage font-medium">🎉 কম্বো অর্ডারে ডেলিভারি সম্পূর্ণ ফ্রি!</p>
+          <div class="flex justify-between items-center pt-3 border-t border-forest/15 text-lg"><dt class="font-semibold text-forest">সর্বমোট প্রদেয়</dt><dd id="sumTotal" class="text-2xl font-bold text-forest">৳০</dd></div>
+        </dl>
+        <button type="submit" class="btn btn-gold w-full mt-6 py-4 text-lg shadow-lg shadow-gold/25">অর্ডার কনফার্ম করুন</button>
+        <ul class="mt-5 space-y-2 text-sm text-forest/75">
+          <li class="flex items-center gap-2"><i data-i="check" class="ic w-4 h-4 text-sage"></i>পণ্য হাতে পেয়ে টাকা দিন (ক্যাশ অন ডেলিভারি)</li>
+          <li class="flex items-center gap-2"><i data-i="check" class="ic w-4 h-4 text-sage"></i>অর্ডারের পর আমাদের টিম ফোনে কনফার্ম করবে</li>
+          <li class="flex items-center gap-2"><i data-i="check" class="ic w-4 h-4 text-sage"></i>৭ দিনের সহজ রিটার্ন সুবিধা</li>
+        </ul>
+      </aside>
+    </form>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="py-16 lg:py-24 bg-white border-t border-forest/10">
+  <div class="max-w-6xl mx-auto px-4 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto reveal">
+      <p class="text-gold-dark font-semibold">আমরা আছি আপনার পাশে</p>
+      <h2 class="mt-1 text-3xl sm:text-4xl font-bold text-forest">যোগাযোগ করুন</h2>
+      <div class="mx-auto mt-4 h-1 w-16 rounded bg-gold"></div>
+      <p class="mt-4 text-forest/75">অর্ডারের আগে চুল বা ত্বক নিয়ে পরামর্শ চান? আমাদের সাথে কথা বলুন।</p>
+    </div>
+    <div class="mt-10 grid lg:grid-cols-2 gap-6 sm:gap-8">
+      <div class="reveal rounded-3xl bg-forest text-white p-6 sm:p-9 relative overflow-hidden">
+        <!-- LOGO watermark: add the same logo src here -->
+        <img alt="" class="logo-img absolute -right-8 -bottom-8 w-52 opacity-10 pointer-events-none select-none">
+        <h3 class="text-2xl font-semibold">সরাসরি যোগাযোগ</h3>
+        <ul class="mt-6 space-y-5">
+          <li class="flex gap-4"><span class="w-11 h-11 rounded-xl bg-white/12 grid place-items-center shrink-0"><i data-i="phone" class="ic w-5 h-5"></i></span><div><p class="text-white/65 text-sm">হেল্পলাইন</p><a data-tel class="text-lg font-semibold hover:text-[#BBF7D0]">+880 1XXX-XXXXXX</a></div></li>
+          <li class="flex gap-4"><span class="w-11 h-11 rounded-xl bg-white/12 grid place-items-center shrink-0"><i data-i="wa" class="ic w-5 h-5"></i></span><div><p class="text-white/65 text-sm">WhatsApp</p><a data-wa target="_blank" rel="noopener" class="btn bg-[#25D366] text-[#0b3d1f] hover:bg-[#3ee07b] px-4 py-2 mt-1 text-[15px]"><i data-i="wa" class="ic w-4 h-4"></i>WhatsApp-এ চ্যাট করুন</a></div></li>
+          <li class="flex gap-4"><span class="w-11 h-11 rounded-xl bg-white/12 grid place-items-center shrink-0"><i data-i="mail" class="ic w-5 h-5"></i></span><div><p class="text-white/65 text-sm">ইমেইল</p><a data-mail class="text-lg font-semibold break-all hover:text-[#BBF7D0]">support@keshobotinaturaglow.com</a></div></li>
+          <li class="flex gap-4"><span class="w-11 h-11 rounded-xl bg-white/12 grid place-items-center shrink-0"><i data-i="pin" class="ic w-5 h-5"></i></span><div><p class="text-white/65 text-sm">অফিস / স্টুডিও</p><p class="text-lg font-semibold">ঢাকা, বাংলাদেশ</p></div></li>
+          <li class="flex gap-4"><span class="w-11 h-11 rounded-xl bg-white/12 grid place-items-center shrink-0"><i data-i="clock" class="ic w-5 h-5"></i></span><div><p class="text-white/65 text-sm">কাস্টমার সাপোর্ট সময়</p><p class="text-lg font-semibold">সকাল ১০টা – রাত ১০টা</p></div></li>
+        </ul>
+      </div>
+      <form id="contactForm" novalidate class="reveal rounded-3xl bg-cream border border-forest/10 shadow-card p-6 sm:p-9">
+        <h3 class="text-2xl font-semibold text-forest">দ্রুত জিজ্ঞাসা</h3>
+        <p class="mt-1 text-forest/70 text-[15px]">চুল বা ত্বকের সমস্যা লিখুন, আমরা আপনার সাথে যোগাযোগ করব।</p>
+        <div class="mt-5 grid gap-4">
+          <div><label for="cName" class="block mb-1.5 font-medium text-forest">আপনার নাম</label><input id="cName" class="field" type="text" autocomplete="name" placeholder="আপনার নাম লিখুন"><p id="err-cName" class="err-msg">অনুগ্রহ করে আপনার নাম লিখুন।</p></div>
+          <div><label for="cPhone" class="block mb-1.5 font-medium text-forest">মোবাইল নম্বর</label><input id="cPhone" class="field" type="tel" inputmode="numeric" maxlength="14" autocomplete="tel" placeholder="01XXXXXXXXX"><p id="err-cPhone" class="err-msg">সঠিক ১১ ডিজিটের মোবাইল নম্বর দিন।</p></div>
+          <div><label for="cMsg" class="block mb-1.5 font-medium text-forest">আপনার প্রশ্ন বা বার্তা</label><textarea id="cMsg" rows="4" class="field resize-none" placeholder="যেমন: আমার চুল অনেক পড়ছে, কোন পণ্য উপযুক্ত হবে?"></textarea><p id="err-cMsg" class="err-msg">অনুগ্রহ করে আপনার বার্তা লিখুন।</p></div>
+        </div>
+        <button type="submit" class="btn btn-gold w-full mt-6 py-3.5 text-lg"><i data-i="send" class="ic w-5 h-5"></i>বার্তা পাঠান</button>
+        <div id="contactOk" class="hidden mt-4 rounded-xl bg-mint text-forest p-4 text-[15px] flex gap-3" role="status"><i data-i="check" class="ic w-5 h-5 text-sage mt-0.5"></i><span></span></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-forest-dark text-white/80">
+  <div class="max-w-7xl mx-auto px-4 lg:px-8 pt-14 pb-8 grid sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10 text-center sm:text-left">
+    <div>
+      <div class="flex items-center justify-center sm:justify-start gap-3"><img src="./images/logo-bg.png" alt="Keshoboti Natura Glow লোগো" class="logo-img h-20 w-auto rounded-xl object-left"><span class="leading-none"><span class="block font-en text-2xl font-semibold text-white tracking-wide">KESHOBOTI</span><span class="block text-sm text-[#BBF7D0]">Natura Glow</span></span></div>
+      <p class="mt-4 text-[15px] leading-relaxed max-w-sm mx-auto sm:mx-0">কেশবতী ন্যাচুরা গ্লো বাংলাদেশের একটি অর্গানিক হারবাল হেয়ারকেয়ার ও স্কিনকেয়ার ব্র্যান্ড। প্রকৃতির খাঁটি উপাদানে, কেমিক্যালমুক্ত যত্নই আমাদের প্রতিশ্রুতি।</p>
+      <div class="mt-5 flex gap-3 justify-center sm:justify-start">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-white/10 grid place-items-center hover:bg-gold transition" aria-label="Facebook"><i data-i="fb" class="ic w-5 h-5"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-white/10 grid place-items-center hover:bg-gold transition" aria-label="Instagram"><i data-i="ig" class="ic w-5 h-5"></i></a>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener" class="w-10 h-10 rounded-full bg-white/10 grid place-items-center hover:bg-gold transition" aria-label="TikTok"><i data-i="tt" class="ic w-5 h-5"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold text-lg mb-4">দ্রুত লিংক</h4>
+      <ul class="space-y-2 text-[15px]">
+        <li><a class="hover:text-[#BBF7D0]" href="#home">হোম</a></li>
+        <li><a class="hover:text-[#BBF7D0]" href="#products">আমাদের পণ্য</a></li>
+        <li><a class="hover:text-[#BBF7D0]" href="#benefits">উপকারিতা</a></li>
+        <li><a class="hover:text-[#BBF7D0]" href="#purity">খাঁটিত্বের নিশ্চয়তা</a></li>
+        <li><a class="hover:text-[#BBF7D0]" href="#reviews">রিভিউ</a></li>
+        <li><a class="hover:text-[#BBF7D0]" href="#faq">FAQ</a></li>
+        <li><a class="hover:text-[#BBF7D0]" href="#contact">যোগাযোগ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold text-lg mb-4">আমাদের পণ্য</h4>
+      <ul class="space-y-2 text-[15px]">
+        <li><a class="hover:text-[#BBF7D0]" href="#products">হারবাল হেয়ার অয়েল</a></li>
+        <li><a class="hover:text-[#BBF7D0]" href="#products">উবটান ও ফেসপ্যাক</a></li>
+        <li><a class="hover:text-[#BBF7D0]" href="#products">অ্যালোভেরা নিম সাবান</a></li>
+        <li><a class="hover:text-[#BBF7D0]" href="#products">কমপ্লিট কেয়ার কম্বো</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-semibold text-lg mb-4">যোগাযোগ</h4>
+      <ul class="space-y-2 text-[15px]">
+        <li>ঢাকা, বাংলাদেশ</li>
+        <li>সকাল ১০টা – রাত ১০টা</li>
+        <li class="break-all">support@keshobotinaturaglow.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 py-5 flex flex-col sm:flex-row gap-2 justify-between items-center text-center sm:text-left text-sm text-white/60">
+      <p>© ২০২৬ কেশবতী ন্যাচুরা গ্লো। সর্বস্বত্ব সংরক্ষিত।</p>
+      <p>ফলাফল ব্যবহারকারীর ত্বক ও চুলের ধরন অনুযায়ী ভিন্ন হতে পারে।</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MOBILE BOTTOM BAR ============ -->
+<nav class="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-white/97 backdrop-blur border-t border-forest/15 shadow-[0_-8px_24px_-12px_rgba(20,83,45,.35)] px-3 py-2.5 flex items-center gap-2.5" aria-label="দ্রুত অ্যাকশন">
+  <a href="#order-form" class="btn btn-gold flex-1 py-3 text-base">এখনই অর্ডার করুন</a>
+  <a data-wa target="_blank" rel="noopener" class="btn bg-[#25D366] text-white w-12 h-12 rounded-xl" aria-label="WhatsApp-এ মেসেজ করুন"><i data-i="wa" class="ic w-6 h-6"></i></a>
+  <a data-tel class="btn btn-forest w-12 h-12 rounded-xl" aria-label="কল করুন"><i data-i="phone" class="ic w-5 h-5"></i></a>
+</nav>
+
+<!-- Order confirmation modal -->
+<div id="orderModal" class="fixed inset-0 z-[70] hidden items-center justify-center p-4 bg-forest-dark/70" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="w-full max-w-md max-h-[92vh] overflow-y-auto bg-white rounded-3xl shadow-lift p-6 sm:p-8 text-center">
+    <div class="mx-auto w-16 h-16 rounded-full bg-mint grid place-items-center text-sage"><i data-i="check" class="ic w-9 h-9"></i></div>
+    <h3 id="modalTitle" class="mt-4 text-2xl font-bold text-forest">ধন্যবাদ! অর্ডার গৃহীত হয়েছে</h3>
+    <p id="modalLead" class="mt-2 text-forest/75"></p>
+    <div class="mt-5 rounded-2xl bg-cream border border-forest/10 p-4 text-left text-[15px]">
+      <div class="flex justify-between"><span class="text-forest/70">অর্ডার নম্বর</span><strong id="mId" class="text-forest"></strong></div>
+      <div id="mLines" class="mt-3 space-y-1.5 border-t border-dashed border-forest/20 pt-3"></div>
+      <div class="mt-3 flex justify-between border-t border-dashed border-forest/20 pt-3"><span class="text-forest/70">ডেলিভারি</span><strong id="mDel" class="text-forest"></strong></div>
+      <div class="mt-1 flex justify-between text-lg"><span class="font-semibold text-forest">সর্বমোট প্রদেয়</span><strong id="mTotal" class="text-forest"></strong></div>
+      <p id="mAddr" class="mt-3 text-sm text-forest/70 border-t border-dashed border-forest/20 pt-3"></p>
+    </div>
+    <p class="mt-4 text-sm text-forest/70">আমাদের টিম শীঘ্রই আপনার মোবাইল নম্বরে কল করে অর্ডার কনফার্ম করবে।</p>
+    <div class="mt-5 grid gap-2.5">
+      <a id="mWa" target="_blank" rel="noopener" class="btn bg-[#25D366] text-[#0b3d1f] hover:bg-[#3ee07b] py-3 text-base"><i data-i="wa" class="ic w-5 h-5"></i>WhatsApp-এ অর্ডার নিশ্চিত করুন</a>
+      <button type="button" id="mClose" class="btn btn-forest py-3 text-base">ঠিক আছে</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast fixed left-1/2 -translate-x-1/2 bottom-24 lg:bottom-8 z-[80] opacity-0 translate-y-3 pointer-events-none bg-forest text-white px-5 py-3 rounded-full shadow-lift flex items-center gap-2 text-[15px] max-w-[92vw]" role="status"><i data-i="check" class="ic w-5 h-5 text-[#9AE0B8]"></i><span></span></div>
+
+<script>
+const CONFIG = { phoneDisplay:'+880 1XXX-XXXXXX', phoneTel:'+8801000000000', whatsapp:'8801000000000', email:'support@keshobotinaturaglow.com', freeDeliveryId:'combo' };
+
+/* ---------- helpers ---------- */
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const BN = '০১২৩৪৫৬৭৮৯';
+const bn = n => String(n).replace(/\d/g, d => BN[d]);
+const en = s => String(s).replace(/[০-৯]/g, d => BN.indexOf(d));
+const money = n => '৳' + bn(Number(n).toLocaleString('en-US'));
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+/* image helper: blank img tag (no src) until you fill the path in PRODUCTS below */
+const srcAttr = s => s ? `src="${esc(s)}"` : '';
+
+const ICONS = {
+  menu:'<line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/>',
+  x:'<line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>',
+  left:'<polyline points="15 18 9 12 15 6"/>', right:'<polyline points="9 18 15 12 9 6"/>', down:'<polyline points="6 9 12 15 18 9"/>',
+  cart:'<circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>',
+  check:'<polyline points="20 6 9 17 4 12"/>', plus:'<line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>', minus:'<line x1="5" y1="12" x2="19" y2="12"/>',
+  trash:'<polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>',
+  phone:'<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>',
+  mail:'<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>',
+  pin:'<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',
+  clock:'<circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>',
+  wa:'<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>',
+  leaf:'<path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>',
+  truck:'<rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>',
+  shield:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/>',
+  undo:'<polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>',
+  sparkle:'<path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.7 1.8L21.5 17.5l-1.8.7L19 20l-.7-1.8-1.8-.7 1.8-.7z"/>',
+  sprout:'<path d="M12 22V12"/><path d="M12 12C12 8 9 5 4 5c0 4 3 7 8 7z"/><path d="M12 14c0-3 2.5-5.5 7-5.5 0 3.5-2.5 5.5-7 5.5z"/>',
+  wind:'<path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/>',
+  gift:'<polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/>',
+  drop:'<path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>',
+  sun:'<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>',
+  heart:'<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>',
+  flower:'<circle cx="12" cy="12" r="3"/><path d="M12 9C12 5 13 2 12 2S12 5 12 9zM15 12c4 0 7 1 7 0s-3 0-7 0zM12 15c0 4-1 7 0 7s0-3 0-7zM9 12c-4 0-7-1-7 0s3 0 7 0z"/><path d="M14.1 9.9l3.2-3.2M14.1 14.1l3.2 3.2M9.9 14.1l-3.2 3.2M9.9 9.9L6.7 6.7"/>',
+  send:'<line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>',
+  fb:'<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',
+  ig:'<rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>',
+  tt:'<path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>',
+  star:'<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>'
+};
+function svgIcon(name, cls='', fill=false){
+  return `<svg class="${cls}" viewBox="0 0 24 24" fill="${fill?'currentColor':'none'}" stroke="currentColor" stroke-width="${fill?1:2}" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICONS[name]||''}</svg>`;
+}
+function hydrate(root=document){
+  $$('i[data-i]', root).forEach(el => {
+    const t = document.createElement('span');
+    t.innerHTML = svgIcon(el.dataset.i, el.className);
+    el.replaceWith(t.firstChild);
+  });
+}
+const stars = (cls='w-4 h-4') => `<span class="inline-flex text-amber-400" aria-hidden="true">${Array(5).fill(svgIcon('star', cls, true)).join('')}</span>`;
+
+/* ---------- static links ---------- */
+$$('[data-wa]').forEach(a => a.href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent('আসসালামু আলাইকুম, কেশবতী ন্যাচুরা গ্লো সম্পর্কে জানতে চাই।'));
+$$('[data-tel]').forEach(a => { a.href = 'tel:' + CONFIG.phoneTel; });
+$$('[data-mail]').forEach(a => { a.href = 'mailto:' + CONFIG.email; });
+
+/* ---------- data ---------- */
+/* PRODUCT IMAGES: fill each img with a path, e.g. img:'images/oil.jpg'. Empty = blank img tag. */
+const PRODUCTS = [
+  { id:'oil',   name:'কেশবতী হারবাল হেয়ার অয়েল (২০০ মিলি)', short:'হারবাল হেয়ার অয়েল (২০০ মিলি)', price:380, old:450, img:'./images/harbal-oil.jpg', badge:'সবচেয়ে জনপ্রিয়', rating:'৪.৯', reviews:'১২৪ রিভিউ', alt:'কেশবতী হারবাল হেয়ার অয়েলের অ্যাম্বার ড্রপার বোতল, জবা ও ভেষজ উপাদানসহ' },
+  { id:'pack',  name:'কেশবতী অর্গানিক উবটান ও ফেসপ্যাক (১০০ গ্রাম)', short:'অর্গানিক উবটান ও ফেসপ্যাক (১০০ গ্রাম)', price:280, old:350, img:'./images/organic-uptan.jpg', rating:'৪.৯', alt:'অ্যালোভেরা, চন্দন ও গোলাপের পাপড়িসহ অর্গানিক উবটান ফেসপ্যাকের জার' },
+  { id:'soap',  name:'হারবাল অ্যালোভেরা নিম সাবান (১০০ গ্রাম)', short:'অ্যালোভেরা নিম সাবান (১০০ গ্রাম)', price:160, old:200, img:'./images/alovera-nim.jpg', rating:'৪.৯', alt:'অ্যালোভেরা ও নিম পাতাসহ প্রাকৃতিক সবুজ হারবাল সাবান' },
+  { id:'combo', name:'কমপ্লিট কেয়ার কম্বো (তেল ২০০ মিলি + ফেসপ্যাক ১০০ গ্রাম)', short:'কমপ্লিট কেয়ার কম্বো (তেল + ফেসপ্যাক)', price:650, old:800, img:'./images/combo.jpg', badge:'বেস্ট ভ্যালু', free:true, rating:'৪.৯', alt:'হারবাল হেয়ার অয়েল ও ফেসপ্যাক জারের গিফট কম্বো বক্স' }
+];
+const byId = id => PRODUCTS.find(p => p.id === id);
+
+const COMPARE = [
+  ['মূল উপাদান','১০০% খাঁটি ভেষজ ও প্রাকৃতিক উপাদান','কৃত্রিম রাসায়নিক ও ফিলার'],
+  ['সালফেট, প্যারাবেন ও কৃত্রিম রং','নেই','প্রায়শই থাকে'],
+  ['স্ক্যাল্প ও ত্বকে প্রভাব','কোমল ও সুরক্ষাদায়ক','জ্বালা ও শুষ্কতা তৈরি করতে পারে'],
+  ['দীর্ঘমেয়াদি যত্ন','গোড়া থেকে পুষ্টি ও মজবুতি','সাময়িক চকচকে ভাব'],
+  ['প্রস্তুত প্রণালি','ঐতিহ্যবাহী ভেষজ পদ্ধতি','শিল্পজাত কেমিক্যাল প্রক্রিয়া'],
+  ['পরিবেশবান্ধব','হ্যাঁ','সাধারণত নয়']
+];
+const INGREDIENTS = [
+  ['flower','জবা ফুল','চুলের গোড়া মজবুত করতে'],
+  ['leaf','অ্যালোভেরা','ত্বকে আর্দ্রতা ও শীতলতা'],
+  ['sprout','নিম','স্ক্যাল্প ও ত্বক পরিষ্কার রাখতে'],
+  ['sun','চন্দন','ত্বকের স্নিগ্ধ উজ্জ্বলতায়'],
+  ['drop','তুলসী','প্রাকৃতিক সতেজতা ও সুরক্ষায়'],
+  ['heart','গোলাপের পাপড়ি','ত্বকের কোমলতা ও সুবাসে']
+];
+const REVIEWS = [
+  { n:'তানজিলা আক্তার', c:'ঢাকা', p:'হারবাল হেয়ার অয়েল', t:'প্রায় দুই মাস ধরে তেলটা ব্যবহার করছি। চুল পড়া আগের চেয়ে অনেক কমেছে আর গন্ধটা খুব হালকা ও আরামদায়ক। আবার অর্ডার করব ইনশাআল্লাহ।' },
+  { n:'রুবিনা ইয়াসমিন', c:'চট্টগ্রাম', p:'উবটান ও ফেসপ্যাক', t:'উবটান ফেসপ্যাকটা ব্যবহার করে ত্বক অনেক নরম লাগছে। কোনো জ্বালাপোড়া নেই, প্যাকেজিংও খুব সুন্দর ছিল।' },
+  { n:'ফারহানা হক', c:'সিলেট', p:'কমপ্লিট কেয়ার কম্বো', t:'কম্বোটা নিয়েছিলাম নিজের জন্য, এখন বোনকেও গিফট করেছি। দামের তুলনায় অনেক ভ্যালু পেয়েছি, ডেলিভারিও দ্রুত ছিল।' },
+  { n:'আরিফুল ইসলাম', c:'রাজশাহী', p:'হারবাল হেয়ার অয়েল', t:'খুশকির সমস্যায় ভুগছিলাম। নিয়মিত তেল ব্যবহারের পর স্ক্যাল্প অনেক পরিষ্কার লাগছে। প্রোডাক্ট একদম অরিজিনাল মনে হয়েছে।' },
+  { n:'সাদিয়া রহমান', c:'খুলনা', p:'অ্যালোভেরা নিম সাবান', t:'সাবানটা ব্যবহারের পর ত্বক টানটান লাগে না, বরং ভেজা ও কোমল থাকে। পুরো পরিবার এখন এটাই ব্যবহার করছে।' },
+  { n:'নুসরাত জাহান', c:'বরিশাল', p:'কমপ্লিট কেয়ার কম্বো', t:'অর্ডার করার পরদিনই কল করে কনফার্ম করেছে। পণ্য হাতে পেয়ে টাকা দিয়েছি, তাই কোনো চিন্তা ছিল না। সার্ভিস ভালো লেগেছে।' }
+];
+const FAQS = [
+  ['কেশবতী ন্যাচুরা গ্লোর পণ্যগুলো কি সত্যিই কেমিক্যালমুক্ত?','আমাদের পণ্য ভেষজ ও প্রাকৃতিক উপাদানে তৈরি এবং এতে সালফেট, প্যারাবেন ও কৃত্রিম রং ব্যবহার করা হয় না। প্রতিটি পণ্যের উপাদান তালিকা প্যাকেজে দেওয়া আছে।'],
+  ['ফলাফল পেতে কতদিন সময় লাগে?','চুল ও ত্বকের ধরন অনুযায়ী ফলাফল আলাদা হয়। সাধারণত নিয়মিত ৪–৮ সপ্তাহ ব্যবহারে পরিবর্তন বোঝা যায়। ধৈর্য ও নিয়মিত যত্নই ভেষজ পণ্যের মূল চাবিকাঠি।'],
+  ['হেয়ার অয়েল কীভাবে ব্যবহার করব?','হালকা গরম করে স্ক্যাল্প ও চুলের গোড়ায় ম্যাসাজ করুন। কমপক্ষে ৩০ মিনিট থেকে সারারাত রেখে শ্যাম্পু করে ধুয়ে ফেলুন। সপ্তাহে ২–৩ বার ব্যবহার করা ভালো।'],
+  ['ফেসপ্যাক কি সব ধরনের ত্বকে ব্যবহার করা যায়?','সাধারণত সব ধরনের ত্বকেই ব্যবহার করা যায়। তবে সংবেদনশীল ত্বকে প্রথমবার ব্যবহারের আগে হাতের ছোট জায়গায় প্যাচ টেস্ট করে নেওয়া ভালো।'],
+  ['ডেলিভারি চার্জ কত এবং কতদিনে পণ্য পাব?','ঢাকার ভেতরে ৳৬০ এবং ঢাকার বাইরে ৳১২০। কমপ্লিট কেয়ার কম্বোতে ডেলিভারি ফ্রি। ঢাকায় সাধারণত ১–২ দিন এবং ঢাকার বাইরে ২–৪ কর্মদিবসে পণ্য পৌঁছে যায়।'],
+  ['পণ্য পছন্দ না হলে কি রিটার্ন করা যাবে?','জি, পণ্য হাতে পাওয়ার ৭ দিনের মধ্যে আমাদের সাপোর্ট টিমের সাথে যোগাযোগ করলে সহজ রিটার্ন বা এক্সচেঞ্জ সুবিধা পাবেন।'],
+  ['পেমেন্ট কীভাবে করব?','সারা দেশে ক্যাশ অন ডেলিভারি চালু আছে। পণ্য হাতে পেয়ে ডেলিভারি ম্যানকে টাকা পরিশোধ করুন।']
+];
+
+/* ---------- render: products / static sections ---------- */
+function renderProducts(){
+  $('#productGrid').innerHTML = PRODUCTS.map((p,i) => {
+    const off = Math.round((1 - p.price/p.old) * 100);
+    return `<article class="pcard group snap-start shrink-0 basis-full sm:basis-[calc((100%-1.25rem)/2)] lg:basis-[calc((100%-2.5rem)/3)] bg-white rounded-2xl shadow-card overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-lift transition duration-300">
+      <div class="relative aspect-[5/4] overflow-hidden bg-sand">
+        <img ${srcAttr(p.img)} alt="${esc(p.alt)}" loading="lazy" class="w-full h-full object-cover">
+        <span class="absolute top-2 left-2 bg-forest text-white text-xs font-semibold px-2.5 py-1 rounded-full">${bn(off)}% ছাড়</span>
+        ${p.badge ? `<span class="absolute top-2 right-2 bg-gold text-white text-xs font-semibold px-2.5 py-1 rounded-full shadow">${p.badge}</span>` : ''}
+      </div>
+      <div class="p-3 sm:p-4 flex flex-col flex-1">
+        <h3 class="font-semibold text-forest text-[15px] sm:text-base leading-snug">${p.name}</h3>
+        <div class="mt-1 flex items-center gap-1.5 text-sm">${stars('w-4 h-4')}<span class="font-medium text-forest/80">${p.rating}</span>${p.reviews ? `<span class="text-forest/55 hidden sm:inline">(${p.reviews})</span>` : ''}</div>
+        <div class="mt-1 flex items-baseline gap-x-2 gap-y-0 flex-wrap"><span class="text-xl sm:text-2xl font-bold text-forest">${money(p.price)}</span><span class="text-sm text-forest/50 line-through">${money(p.old)}</span>${p.free ? `<span class="text-sm font-medium text-sage inline-flex items-center gap-1 self-center">${svgIcon('truck','w-4 h-4')}ফ্রি ডেলিভারি</span>` : ''}</div>
+        <div class="mt-auto pt-3 grid grid-cols-2 gap-2">
+          <button type="button" data-add="${p.id}" class="btn btn-line px-2 py-2 text-[13.5px] sm:text-[15px]">কার্টে যোগ করুন</button>
+          <button type="button" data-order="${p.id}" class="btn btn-gold px-2 py-2 text-[13.5px] sm:text-[15px]">অর্ডার করুন</button>
+        </div>
+      </div>
+    </article>`;
+  }).join('');
+}
+function renderStatic(){
+  $('#compareBody').innerHTML = COMPARE.map((r,i) => `<tr class="${i%2?'bg-cream/70':''} border-t border-forest/10">
+    <th scope="row" class="p-4 sm:p-5 font-semibold text-forest">${r[0]}</th>
+    <td class="p-4 sm:p-5 text-center bg-mint/50"><span class="inline-flex items-center gap-2 text-forest font-medium"><span class="w-6 h-6 rounded-full bg-sage text-white grid place-items-center shrink-0">${svgIcon('check','w-4 h-4')}</span>${r[1]}</span></td>
+    <td class="p-4 sm:p-5 text-center text-forest/65"><span class="inline-flex items-center gap-2"><span class="w-6 h-6 rounded-full bg-red-100 text-red-600 grid place-items-center shrink-0">${svgIcon('x','w-4 h-4')}</span>${r[2]}</span></td></tr>`).join('');
+  $('#ingredients').innerHTML = INGREDIENTS.map((x,i) => `<div class="reveal bg-white rounded-2xl p-4 sm:p-5 text-center shadow-card hover:-translate-y-1 transition" style="transition-delay:${i*60}ms">
+    <span class="mx-auto w-14 h-14 rounded-full bg-mint text-sage grid place-items-center">${svgIcon(x[0],'w-7 h-7')}</span>
+    <h4 class="mt-3 font-semibold text-forest">${x[1]}</h4><p class="mt-1 text-[13.5px] text-forest/65 leading-snug">${x[2]}</p></div>`).join('');
+  $('#reviewGrid').innerHTML = REVIEWS.map((r,i) => `<figure class="reveal bg-white rounded-2xl p-6 shadow-card border border-forest/5 flex flex-col" style="transition-delay:${(i%3)*80}ms">
+    <div class="flex items-center justify-between">${stars('w-5 h-5')}<span class="inline-flex items-center gap-1 text-xs font-semibold text-sage bg-mint rounded-full px-2.5 py-1">${svgIcon('check','w-3.5 h-3.5')}ভেরিফাইড বায়ার</span></div>
+    <blockquote class="mt-4 text-forest/85 leading-relaxed flex-1">“${r.t}”</blockquote>
+    <figcaption class="mt-5 pt-4 border-t border-forest/10 flex items-center gap-3">
+      <span class="w-11 h-11 rounded-full bg-forest text-white font-semibold grid place-items-center text-lg">${r.n[0]}</span>
+      <span class="leading-tight"><span class="block font-semibold text-forest">${r.n}</span><span class="text-sm text-forest/60">${r.c} • ${r.p}</span></span>
+    </figcaption></figure>`).join('');
+  $('#faqList').innerHTML = FAQS.map((f,i) => `<div class="faq-item bg-white rounded-2xl border border-forest/10 shadow-sm overflow-hidden ${i===0?'open':''}">
+    <h3><button type="button" class="w-full flex items-center justify-between gap-4 text-left p-5 font-semibold text-forest text-[17px]" aria-expanded="${i===0}" aria-controls="faq-${i}" id="faqb-${i}"><span>${f[0]}</span><span class="faq-chev w-8 h-8 rounded-full bg-mint text-sage grid place-items-center shrink-0">${svgIcon('down','w-5 h-5')}</span></button></h3>
+    <div class="faq-body" id="faq-${i}" role="region" aria-labelledby="faqb-${i}"><div><p class="px-5 pb-5 text-forest/80 leading-relaxed">${f[1]}</p></div></div></div>`).join('');
+}
+
+/* ---------- cart / order state ---------- */
+const cart = {};
+const itemCount = () => Object.values(cart).reduce((a,b) => a+b, 0);
+const subtotal = () => Object.entries(cart).reduce((s,[id,q]) => s + byId(id).price*q, 0);
+const selectedZone = () => Number($('input[name="zone"]:checked').value);
+const deliveryFee = () => (!itemCount() ? 0 : (cart[CONFIG.freeDeliveryId] ? 0 : selectedZone()));
+
+function stepper(id, q){
+  return `<div class="inline-flex items-center rounded-lg border border-forest/20 bg-white overflow-hidden">
+    <button type="button" data-qty="${id}" data-d="-1" class="w-9 h-9 grid place-items-center text-forest hover:bg-forest/5" aria-label="কমান">${svgIcon('minus','w-4 h-4')}</button>
+    <span class="w-9 text-center font-semibold text-forest" aria-live="polite">${bn(q)}</span>
+    <button type="button" data-qty="${id}" data-d="1" class="w-9 h-9 grid place-items-center text-forest hover:bg-forest/5" aria-label="বাড়ান">${svgIcon('plus','w-4 h-4')}</button></div>`;
+}
+function render(){
+  const n = itemCount();
+  $$('.cart-count').forEach(el => el.textContent = bn(n));
+  $$('.cart-count-text').forEach(el => el.textContent = bn(n));
+
+  // cart drawer
+  const ids = Object.keys(cart);
+  $('#cartItems').innerHTML = ids.length ? ids.map(id => { const p = byId(id), q = cart[id]; return `<div class="flex gap-3 bg-white rounded-2xl p-3 border border-forest/10">
+      <img ${srcAttr(p.img)} alt="${esc(p.alt)}" class="w-20 h-20 rounded-xl object-cover bg-sand shrink-0">
+      <div class="flex-1 min-w-0"><p class="font-semibold text-forest text-[15px] leading-snug">${p.short}</p>
+        <p class="text-gold-dark font-bold mt-0.5">${money(p.price)}</p>
+        <div class="mt-2 flex items-center justify-between">${stepper(id,q)}<button type="button" data-remove="${id}" class="p-2 text-red-600 hover:bg-red-50 rounded-lg" aria-label="${esc(p.short)} মুছুন">${svgIcon('trash','w-4 h-4')}</button></div></div></div>`; }).join('')
+    : `<div class="text-center py-16 text-forest/65"><div class="mx-auto w-16 h-16 rounded-full bg-mint grid place-items-center text-sage">${svgIcon('cart','w-8 h-8')}</div><p class="mt-4 font-medium">আপনার কার্ট এখন খালি</p><a data-close href="#products" class="btn btn-forest mt-5 px-5 py-2.5">পণ্য দেখুন</a></div>`;
+  $('#cartSubtotal').textContent = money(subtotal());
+  $('#cartCheckout').disabled = !ids.length;
+  $('#cartCheckout').classList.toggle('opacity-50', !ids.length);
+
+  // order picker
+  $('#picker').innerHTML = PRODUCTS.map(p => { const q = cart[p.id] || 0, on = q > 0; return `<div class="flex items-center gap-3 rounded-2xl border-[1.5px] p-3 transition ${on?'border-sage bg-mint/60':'border-[#CFE3D3] bg-white'}" data-row="${p.id}">
+      <button type="button" data-toggle="${p.id}" class="flex items-center gap-3 flex-1 min-w-0 text-left" aria-pressed="${on}">
+        <span class="w-6 h-6 rounded-md border-2 grid place-items-center shrink-0 ${on?'bg-sage border-sage text-white':'border-forest/30 text-transparent'}">${svgIcon('check','w-4 h-4')}</span>
+        <img ${srcAttr(p.img)} alt="" class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl object-cover bg-sand shrink-0">
+        <span class="min-w-0"><span class="block font-semibold text-forest text-[14.5px] sm:text-[15.5px] leading-snug">${p.short}</span><span class="block text-sm"><strong class="text-gold-dark">${money(p.price)}</strong> <s class="text-forest/45">${money(p.old)}</s>${p.free?' <span class="text-sage font-medium">• ফ্রি ডেলিভারি</span>':''}</span></span>
+      </button>
+      ${on ? stepper(p.id,q) : ''}</div>`; }).join('');
+
+  // summary
+  const lines = ids.map(id => { const p = byId(id), q = cart[id]; return `<div class="flex justify-between gap-3 py-2.5"><span class="text-forest/85">${p.short} <span class="text-forest/55">× ${bn(q)}</span></span><span class="font-semibold text-forest whitespace-nowrap">${money(p.price*q)}</span></div>`; }).join('');
+  $('#summaryLines').innerHTML = lines || '<p class="py-3 text-forest/55">এখনো কোনো পণ্য বেছে নেওয়া হয়নি।</p>';
+  const sub = subtotal(), del = deliveryFee();
+  $('#sumSub').textContent = money(sub);
+  $('#sumDel').textContent = (n && del === 0) ? 'ফ্রি' : money(del);
+  $('#freeNote').classList.toggle('hidden', !(cart[CONFIG.freeDeliveryId]));
+  $('#sumTotal').textContent = money(sub + del);
+  if(n) $('#err-products').classList.remove('show');
+}
+
+function addToCart(id, qty=1, quiet=false){
+  cart[id] = (cart[id] || 0) + qty;
+  render();
+  $$('.cart-count').forEach(el => { el.classList.remove('pop'); void el.offsetWidth; el.classList.add('pop'); });
+  if(!quiet) toast(byId(id).short + ' কার্টে যোগ হয়েছে');
+}
+function setQty(id, q){ if(q <= 0) delete cart[id]; else cart[id] = Math.min(q, 20); render(); }
+function orderNow(id){
+  if(!cart[id]) cart[id] = 1;
+  render(); closePanels();
+  const form = $('#order-form');
+  form.scrollIntoView({ behavior:'smooth', block:'start' });
+  const row = $(`[data-row="${id}"]`);
+  if(row){ row.classList.remove('flash'); void row.offsetWidth; row.classList.add('flash'); }
+  toast(byId(id).short + ' অর্ডারের জন্য নির্বাচিত');
+}
+
+/* ---------- panels, modal, toast ---------- */
+const overlay = $('#overlay');
+function openPanel(name){
+  closePanels(true);
+  const p = $(name === 'cart' ? '#cartPanel' : '#menuPanel');
+  p.classList.remove('translate-x-full','-translate-x-full');
+  p.setAttribute('aria-hidden','false');
+  overlay.classList.remove('opacity-0','pointer-events-none');
+  document.body.classList.add('overflow-hidden');
+}
+function closePanels(keepOverlay){
+  $('#cartPanel').classList.add('translate-x-full'); $('#cartPanel').setAttribute('aria-hidden','true');
+  $('#menuPanel').classList.add('-translate-x-full'); $('#menuPanel').setAttribute('aria-hidden','true');
+  if(!keepOverlay){ overlay.classList.add('opacity-0','pointer-events-none'); if($('#orderModal').classList.contains('hidden')) document.body.classList.remove('overflow-hidden'); }
+}
+let toastTimer;
+function toast(msg){
+  const t = $('#toast'); t.querySelector('span').textContent = msg;
+  t.classList.remove('opacity-0','translate-y-3');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.add('opacity-0','translate-y-3'), 2600);
+}
+function closeModal(){ const m = $('#orderModal'); m.classList.add('hidden'); m.classList.remove('flex'); document.body.classList.remove('overflow-hidden'); }
+
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-add],[data-order],[data-open],[data-close],[data-qty],[data-remove],[data-toggle]');
+  if(!t) return;
+  if(t.dataset.add) addToCart(t.dataset.add);
+  else if(t.dataset.order) orderNow(t.dataset.order);
+  else if(t.dataset.open) openPanel(t.dataset.open);
+  else if(t.hasAttribute('data-close')) closePanels();
+  else if(t.dataset.qty) setQty(t.dataset.qty, (cart[t.dataset.qty]||0) + Number(t.dataset.d));
+  else if(t.dataset.remove) setQty(t.dataset.remove, 0);
+  else if(t.dataset.toggle){ const id = t.dataset.toggle; if(cart[id]) setQty(id,0); else setQty(id,1); }
+});
+$('#cartCheckout').addEventListener('click', () => { closePanels(); $('#order-form').scrollIntoView({behavior:'smooth'}); });
+$('#mClose').addEventListener('click', closeModal);
+$('#orderModal').addEventListener('click', e => { if(e.target.id === 'orderModal') closeModal(); });
+document.addEventListener('keydown', e => { if(e.key === 'Escape'){ closePanels(); closeModal(); } });
+$$('input[name="zone"]').forEach(r => r.addEventListener('change', render));
+$('#faqList').addEventListener('click', e => {
+  const b = e.target.closest('button[aria-expanded]'); if(!b) return;
+  const item = b.closest('.faq-item'); const open = !item.classList.contains('open');
+  $$('.faq-item').forEach(i => { i.classList.remove('open'); i.querySelector('button').setAttribute('aria-expanded','false'); });
+  if(open){ item.classList.add('open'); b.setAttribute('aria-expanded','true'); }
+});
+
+/* ---------- hero slider ---------- */
+(function(){
+  const slides = $$('.slide'), dotsBox = $('#dots');
+  let cur = 0, timer = null;
+  const DELAY = 4500;
+  dotsBox.innerHTML = slides.map((_,i) => `<button type="button" role="tab" class="dot ${i===0?'on':''}" aria-label="স্লাইড ${bn(i+1)}" aria-selected="${i===0}"></button>`).join('');
+  const dots = $$('.dot', dotsBox);
+  function go(n){
+    cur = (n + slides.length) % slides.length;
+    slides.forEach((s,i) => { s.classList.toggle('active', i === cur); s.setAttribute('aria-hidden', i !== cur); });
+    dots.forEach((d,i) => { d.classList.toggle('on', i === cur); d.setAttribute('aria-selected', i === cur); });
+  }
+  const start = () => { stop(); if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; timer = setInterval(() => go(cur+1), DELAY); };
+  const stop = () => { if(timer){ clearInterval(timer); timer = null; } };
+  $('#prevSlide').addEventListener('click', () => { go(cur-1); start(); });
+  $('#nextSlide').addEventListener('click', () => { go(cur+1); start(); });
+  dots.forEach((d,i) => d.addEventListener('click', () => { go(i); start(); }));
+  const box = $('#slider');
+  box.addEventListener('mouseenter', stop); box.addEventListener('mouseleave', start);
+  box.addEventListener('focusin', stop); box.addEventListener('focusout', start);
+  let sx = null;
+  box.addEventListener('touchstart', e => { sx = e.touches[0].clientX; stop(); }, {passive:true});
+  box.addEventListener('touchend', e => { if(sx !== null){ const dx = e.changedTouches[0].clientX - sx; if(Math.abs(dx) > 45) go(cur + (dx < 0 ? 1 : -1)); } sx = null; start(); });
+  document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());
+  slides.forEach((s,i) => s.setAttribute('aria-hidden', i !== 0));
+  start();
+})();
+
+/* ---------- validation + forms ---------- */
+const isBDPhone = v => /^(?:\+?880|0)?1[3-9]\d{8}$/.test(en(v).replace(/[\s-]/g,''));
+const normPhone = v => { let d = en(v).replace(/[\s-]/g,'').replace(/^\+?880/,'0'); return d.startsWith('0') ? d : '0'+d; };
+function flag(inputId, errId, bad){
+  const i = inputId ? $('#'+inputId) : null, m = $('#'+errId);
+  if(i) i.classList.toggle('err', bad);
+  m.classList.toggle('show', bad);
+  if(i) i.setAttribute('aria-invalid', bad);
+  return bad;
+}
+['fPhone','cPhone'].forEach(id => $('#'+id).addEventListener('input', e => { e.target.value = en(e.target.value).replace(/[^\d+\-\s]/g,''); }));
+
+$('#orderForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const name = $('#fName').value.trim(), phone = $('#fPhone').value, addr = $('#fAddress').value.trim();
+  const bad = [
+    flag(null,'err-products', itemCount() === 0),
+    flag('fName','err-name', name.length < 2),
+    flag('fPhone','err-phone', !isBDPhone(phone)),
+    flag('fAddress','err-address', addr.length < 10)
+  ];
+  if(bad.some(Boolean)){
+    const first = !bad[0] ? $('.field.err') : $('#picker');
+    if(first){ first.scrollIntoView({behavior:'smooth', block:'center'}); if(first.focus && first.tagName !== 'DIV') first.focus({preventScroll:true}); }
+    return;
+  }
+  const sub = subtotal(), del = deliveryFee(), total = sub + del;
+  const orderId = 'KNG-' + bn(Math.floor(100000 + Math.random()*900000));
+  const items = Object.entries(cart).map(([id,q]) => ({p:byId(id), q}));
+  const ph = normPhone(phone);
+  $('#modalLead').textContent = `প্রিয় ${name}, আপনার অর্ডারের জন্য ধন্যবাদ।`;
+  $('#mId').textContent = orderId;
+  $('#mLines').innerHTML = items.map(x => `<div class="flex justify-between gap-3"><span>${esc(x.p.short)} × ${bn(x.q)}</span><span class="font-medium whitespace-nowrap">${money(x.p.price*x.q)}</span></div>`).join('');
+  $('#mDel').textContent = del === 0 ? 'ফ্রি' : money(del);
+  $('#mTotal').textContent = money(total);
+  $('#mAddr').innerHTML = `<strong class="text-forest">${esc(bn(ph))}</strong><br>${esc(addr)}`;
+  const msg = `আসসালামু আলাইকুম, আমি অর্ডার কনফার্ম করতে চাই।\nঅর্ডার নম্বর: ${orderId}\nনাম: ${name}\nমোবাইল: ${ph}\nঠিকানা: ${addr}\n` + items.map(x => `- ${x.p.short} × ${bn(x.q)}`).join('\n') + `\nডেলিভারি: ${del === 0 ? 'ফ্রি' : money(del)}\nমোট: ${money(total)}`;
+  $('#mWa').href = 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(msg);
+  const m = $('#orderModal'); m.classList.remove('hidden'); m.classList.add('flex'); document.body.classList.add('overflow-hidden');
+  $('#mClose').focus();
+  Object.keys(cart).forEach(k => delete cart[k]);
+  e.target.reset(); $$('#orderForm .field').forEach(f => f.classList.remove('err'));
+  render();
+});
+['fName','fPhone','fAddress'].forEach(id => $('#'+id).addEventListener('input', () => { $('#'+id).classList.remove('err'); $('#err-'+({fName:'name',fPhone:'phone',fAddress:'address'})[id]).classList.remove('show'); }));
+
+$('#contactForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const n = $('#cName').value.trim(), p = $('#cPhone').value, m = $('#cMsg').value.trim();
+  const bad = [flag('cName','err-cName', n.length < 2), flag('cPhone','err-cPhone', !isBDPhone(p)), flag('cMsg','err-cMsg', m.length < 5)];
+  const ok = $('#contactOk');
+  if(bad.some(Boolean)){ ok.classList.add('hidden'); return; }
+  ok.querySelector('span').textContent = `ধন্যবাদ ${n}! আপনার বার্তা পাঠানো হয়েছে। আমাদের টিম সকাল ১০টা – রাত ১০টার মধ্যে ${bn(normPhone(p))} নম্বরে যোগাযোগ করবে।`;
+  ok.classList.remove('hidden'); toast('আপনার বার্তা পাঠানো হয়েছে');
+  e.target.reset();
+});
+
+/* ---------- product slider (arrows + swipe) ---------- */
+function initProdSlider(){
+  const tr = $('#productGrid'), prev = $('#prodPrev'), next = $('#prodNext');
+  const step = () => { const c = tr.firstElementChild; return c ? c.offsetWidth + (parseFloat(getComputedStyle(tr).columnGap) || 0) : 300; };
+  const upd = () => {
+    prev.disabled = tr.scrollLeft <= 2;
+    next.disabled = tr.scrollLeft + tr.clientWidth >= tr.scrollWidth - 2;
+  };
+  prev.addEventListener('click', () => tr.scrollBy({ left: -step(), behavior: 'smooth' }));
+  next.addEventListener('click', () => tr.scrollBy({ left: step(), behavior: 'smooth' }));
+  tr.addEventListener('scroll', upd, { passive: true });
+  window.addEventListener('resize', upd);
+  upd();
+}
+
+/* ---------- active nav + reveal ---------- */
+function observe(){
+  const links = $$('[data-nav]');
+  const secs = ['home','products','benefits','purity','reviews','faq','contact'].map(id => document.getElementById(id));
+  if('IntersectionObserver' in window){
+    const navIO = new IntersectionObserver(es => es.forEach(en_ => {
+      if(en_.isIntersecting){ links.forEach(l => { const on = l.dataset.nav === en_.target.id; l.classList.toggle('text-gold-dark', on); l.classList.toggle('border-gold', on); l.classList.toggle('border-transparent', !on); }); }
+    }), { rootMargin:'-45% 0px -50% 0px' });
+    secs.forEach(s => navIO.observe(s));
+    const io = new IntersectionObserver(es => es.forEach(x => { if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target); } }), { threshold:.12, rootMargin:'0px 0px -40px 0px' });
+    $$('.reveal').forEach(el => io.observe(el));
+  } else { $$('.reveal').forEach(el => el.classList.add('in')); }
+}
+
+/* ---------- init ---------- */
+renderProducts(); renderStatic(); hydrate(); initProdSlider(); render(); observe();
+</script>
+</body>
+</html>
